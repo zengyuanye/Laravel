@@ -38,7 +38,8 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">Learning Laravel 5</div>
+                <div class="cotent"><a href="test.app">测试</a></div>
             </div>
         </div>
     </body>

@@ -47,30 +47,43 @@
 // });
 
 
+//
+//Route::group(['as'=>'admin::'],function(){
+//
+//	Route::get('dashboard',['as'=>'dashboard',function(){
+//		//
+//	}]);
+//});
+//Route::get('/testNameRoute',function(){
+//	return route('admin::dashboard');
+//	// return redirect()->route('academy',['id'=>'老宋','name'=>'呵呵大']);
+//});
+//
+//Route::group(['middleware'=>'test'],function(){
+//
+//	Route::get('/write/laravelacademy',function(){
+//		//使用test中间件
+//	});
+//	Route::get('/update/laravelacademy',function(){
+//
+//	});
+//});
+//
+//
+//Route::get('/age/refuse',['as'=>'refuse',function(){
+//
+//	return '未成年禁止入内额！';
+//}]);
 
-Route::group(['as'=>'admin::'],function(){
+Route::get('/',function() {
 
-	Route::get('dashboard',['as'=>'dashboard',function(){
-		//
-	}]);
+	return view('welcome');
 });
-Route::get('/testNameRoute',function(){
-	return route('admin::dashboard');
-	// return redirect()->route('academy',['id'=>'老宋','name'=>'呵呵大']);
-});
 
-Route::group(['middleware'=>'test'],function(){
+Route::get('/test.app',function() {
 
-	Route::get('/write/laravelacademy',function(){
-		//使用test中间件
-	});
-	Route::get('/update/laravelacademy',function(){
-
-	});
+	return view('/test/test');
 });
 
 
-Route::get('/age/refuse',['as'=>'refuse',function(){
 
-	return '未成年禁止入内额！';
-}]);
